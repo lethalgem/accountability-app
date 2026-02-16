@@ -1,0 +1,19 @@
+name = "accountability-app"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+routes = [
+  { pattern = "accountability.iancash.me/*", zone_name = "iancash.me" }
+]
+
+[assets]
+directory = "public"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "accountability-app"
+database_id = "ff84ffb2-164e-4610-9cd8-5d3d66c08a8b"
+
+[vars]
+FRONTEND_URL = "https://accountability.iancash.me"
